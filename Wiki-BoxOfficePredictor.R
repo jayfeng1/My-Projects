@@ -45,7 +45,9 @@ plot(movie.1000$WP.view, movie.1000$revenue)
 linear.1000 = lm(revenue ~ WP.view, data = movie.1000)
 abline(linear.1000)
 ``` 
-#Cross Validation and model testing
+#Cross Validation and model testing in full code form/no packages
+#Running through and comparing four different models involving amount of theaters, wikipedia
+#article iniation date, season the movie is released in, and amount of wikipedia page views
 samp.size <- nrow(movie.data2)
 errors<- matrix(0, nrow=samp.size, ncol=4)
 
